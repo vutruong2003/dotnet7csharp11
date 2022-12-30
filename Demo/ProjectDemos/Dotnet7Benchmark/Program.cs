@@ -1,1 +1,7 @@
-﻿BenchmarkDotNet.Running.BenchmarkRunner.Run<Dotnet7Benchmark.RandomBenchmark>();
+﻿//BenchmarkRunner.Run<LinqOrderBenchmark>();
+//BenchmarkRunner.Run<RandomBenchmark>();
+//BenchmarkRunner.Run<StopwatchBenchmark>();
+
+MathUtilTest.Execute();
+
+//BenchmarkRunner.Run<SumBenchmark>();

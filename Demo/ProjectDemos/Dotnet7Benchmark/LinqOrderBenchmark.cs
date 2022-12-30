@@ -5,7 +5,7 @@ namespace Dotnet7Benchmark;
 [MemoryDiagnoser]
 public class LinqOrderBenchmark
 {
-    [Params(1000)]
+    [Params(10000)]
     public int Length { get; set; }
 
     private double[] arr;

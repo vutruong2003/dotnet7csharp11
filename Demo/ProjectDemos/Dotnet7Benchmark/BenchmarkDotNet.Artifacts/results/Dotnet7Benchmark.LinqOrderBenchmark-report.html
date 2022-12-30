@@ -2,7 +2,7 @@
 <html lang='en'>
 <head>
 <meta charset='utf-8' />
-<title>Dotnet7Benchmark.LinqOrderBenchmark-20221222-101831</title>
+<title>Dotnet7Benchmark.LinqOrderBenchmark-20221229-112204</title>
 
 <style type="text/css">
 	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
@@ -15,17 +15,17 @@
 <pre><code>
 BenchmarkDotNet=v0.13.2, OS=Windows 11 (10.0.22000.1335/21H2)
 Intel Core i7-10750H CPU 2.60GHz, 1 CPU, 12 logical and 6 physical cores
-.NET SDK=7.0.100
-  [Host]     : .NET 7.0.0 (7.0.22.51805), X64 RyuJIT AVX2
-  DefaultJob : .NET 7.0.0 (7.0.22.51805), X64 RyuJIT AVX2
+.NET SDK=7.0.101
+  [Host]     : .NET 7.0.1 (7.0.122.56804), X64 RyuJIT AVX2
+  DefaultJob : .NET 7.0.1 (7.0.122.56804), X64 RyuJIT AVX2
 </code></pre>
 <pre><code></code></pre>
 
 <table>
 <thead><tr><th>Method</th><th>Length</th><th>Mean</th><th>Error</th><th>StdDev</th><th>Gen0</th><th>Gen1</th><th>Allocated</th>
 </tr>
-</thead><tbody><tr><td>OrderBy</td><td>1000</td><td>84.70 &mu;s</td><td>0.576 &mu;s</td><td>0.450 &mu;s</td><td>4.3945</td><td>0.1221</td><td>27.61 KB</td>
-</tr><tr><td>Order</td><td>1000</td><td>82.96 &mu;s</td><td>1.576 &mu;s</td><td>1.687 &mu;s</td><td>3.1738</td><td>-</td><td>19.77 KB</td>
+</thead><tbody><tr><td>OrderBy</td><td>10000</td><td>1.172 ms</td><td>0.0120 ms</td><td>0.0107 ms</td><td>42.9688</td><td>1.9531</td><td>273.7 KB</td>
+</tr><tr><td>Order</td><td>10000</td><td>1.197 ms</td><td>0.0238 ms</td><td>0.0292 ms</td><td>31.2500</td><td>13.6719</td><td>195.56 KB</td>
 </tr></tbody></table>
 </body>
 </html>

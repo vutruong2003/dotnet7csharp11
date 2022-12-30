@@ -12,7 +12,7 @@ public static class MathUtil
         var sum = source[0];
         ReadOnlySpan<T> span = source;
 
-        for (var i = 0; i < span.Length; i++)
+        for (var i = 1; i < span.Length; i++)
         {
             sum += span[i];
         }
@@ -28,7 +28,7 @@ public static class MathUtil
             var sums = new Vector<T>(span);
             var index = Vector<T>.Count;
 
-            while (index + Vector<T>.Count < span.Length)
+            while (index + Vector<T>.Count < span.Length - 1)
             {
                 sums = Vector.Add<T>(sums, new Vector<T>(span.Slice(index)));
                 index += Vector<T>.Count;
